@@ -1,0 +1,153 @@
+html {
+  background-color: rgb(245, 251, 252);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-width: 700px;
+}
+
+main {
+  font-size: 18px;
+  background-color: rgb(248, 240, 229);
+  margin: 10px auto;
+  margin-bottom: 30px;
+  border: 1px solid black;
+  padding: 20px;
+  width: 80%;
+  overflow: hidden;
+}
+
+/* Headings */
+h1,
+h2 {
+  text-align: center;
+}
+
+/* Nav */
+nav {
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+/* Image */
+#dog {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Link */
+a {
+  text-decoration: none;
+  background-color: rgb(219, 219, 219);
+  padding: 10px;
+  margin: 5px;
+}
+
+/* Visited and unvisited link */
+a:link,
+a:visited {
+  color: #008000;
+}
+
+/* Mouse over link */
+a:hover {
+  color: #ff69b4;
+  background-color: #f5f5dc;
+}
+
+/* Selected link */
+a:active {
+  color: #0000ff;
+}
+
+.info {
+  background-color: rgb(186, 241, 215);
+  padding: 15px;
+}
+
+/* Card */
+.card-div {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card {
+  background-color: rgb(252, 188, 227);
+  width: 200px;
+  height: 300px;
+  margin: 30px;
+  border-radius: 5%;
+  overflow: hidden; /* tällä voi leikata kuvan, ja näkyy kortin pyöristykset */
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card p {
+  padding: 15px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.item {
+  background-color: rgb(214, 189, 238);
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  text-align: center;
+}
+
+.item p {
+  padding-top: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  top: 50%;
+}
+
+th,
+td {
+  padding: 5x;
+  border: 1px solid #e0e0e0;
+}
+
+th {
+  background-color: rgb(144, 196, 131);
+}
+
+/* Table background */
+tr:nth-child(even) {
+  background-color: rgb(220, 220, 220);
+}
+
+tr:hover {
+  background-color: rgb(183, 206, 178);
+}
+
+footer {
+  display: flex;
+  color: #000;
+  height: 100px;
+  background-color: rgb(175, 213, 247);
+  justify-content: center;
+  align-items: center;
+}
