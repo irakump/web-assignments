@@ -1,0 +1,116 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+input,
+select {
+    /* Padding is 0.25 of rem, root element, which is 16 / 4 = 4 px */
+  padding: 0.25rem;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  margin-top: 1rem;
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+button[type="reset"] {
+  background-color: #6c757d;
+}
+
+/* Responsive design */
+
+/* Small screens - smartphone */
+@media (max-width: 600px) {
+
+  form div {
+    display: flex;
+    flex-direction: column;
+    }
+
+    input,
+    button,
+    select {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+  }
+
+  label {
+     margin-top: 0.5rem;
+   }
+
+   button[type="submit"],
+   button[type="reset"] {
+    padding: 1rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .checkbox-container {
+    display: inline;
+    margin-top: 1rem;
+}
+
+}
+
+ /* Medium & large screens */
+      @media (min-width: 601px) {
+
+        button[type="submit"],
+        button[type="reset"] {
+          padding: 1rem;
+        }
+
+        button[type="submit"] {
+          order: 1;
+        }
+      }
+
+/* Medium screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  form div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    margin-bottom: 1rem;
+  }
+
+  .checkbox-container {
+    grid-column: 2 / -1;
+    display: inline;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  form>div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form>div input,
+  form>div select {
+    margin-bottom: 1rem;
+  }
+
+  .checkbox-container {
+    margin-top: 1rem;
+  }
+}
